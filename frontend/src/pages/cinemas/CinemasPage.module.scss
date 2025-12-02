@@ -1,0 +1,23 @@
+.header {
+  display: grid;
+  grid-template-columns: 2fr 3fr 150px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 3fr 150px;
+  align-items: center;
+  padding: 10px 0;
+}
+

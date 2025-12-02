@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.screen {
+  width: 80%;
+  height: 30px;
+  background: linear-gradient(to bottom, #555, transparent);
+  margin: 40px 0;
+  text-align: center;
+  color: #888;
+  letter-spacing: 5px;
+  transform: perspective(500px) rotateX(-30deg);
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.1);
+}
+
+.hall {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rowLabel {
+  width: 60px;
+  text-align: right;
+  color: #888;
+}
+
+.seatsContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+  background-color: #222;
+
+  &:hover:not(.booked) {
+    border-color: var(--accent-color);
+    background-color: #333;
+  }
+
+  &.selected {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+  }
+
+  &.booked {
+    background-color: #333;
+    color: #555;
+    border-color: #333;
+    cursor: not-allowed;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.bookButton {
+  padding: 15px 40px;
+  font-size: 18px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: none;
+  
+  &:hover {
+    background-color: #ddd;
+  }
+  
+  &:disabled {
+    background-color: #555;
+    color: #888;
+  }
+}
+

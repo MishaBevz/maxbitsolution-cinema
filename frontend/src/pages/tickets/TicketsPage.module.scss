@@ -1,0 +1,73 @@
+.container {
+  padding-top: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+
+  h2 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.movieTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.cinemaName {
+  color: var(--accent-color);
+}
+
+.date {
+  color: #888;
+}
+
+.seats {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.payButton {
+  border-color: var(--text-color);
+  
+  &:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
+}
+

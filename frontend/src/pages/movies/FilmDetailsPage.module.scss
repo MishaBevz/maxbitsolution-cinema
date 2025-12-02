@@ -1,0 +1,90 @@
+.container {
+  padding-top: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.poster {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #222;
+}
+
+.details {
+  flex: 1;
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #888;
+  
+  span {
+    color: var(--text-color);
+    margin-left: 10px;
+  }
+}
+
+.schedule {
+  margin-top: 40px;
+}
+
+.dateGroup {
+  margin-bottom: 30px;
+}
+
+.dateTitle {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.cinemasList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cinemaRow {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: flex-start;
+}
+
+.cinemaName {
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.timeButton {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  
+  &:hover {
+    background-color: var(--hover-color);
+    border-color: var(--text-color);
+  }
+}
+
